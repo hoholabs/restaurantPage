@@ -65,6 +65,10 @@ homePage.append(location);
 
 function loadHome() {
 content.append(homePage);
+document.querySelectorAll(".nav-button").forEach(element => {
+    element.style.backgroundColor = "var(--color2)";      
+});
+document.getElementById("home-button").style.backgroundColor = "var(--color1)";
 };
 
 export default loadHome;

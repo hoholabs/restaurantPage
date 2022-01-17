@@ -7,6 +7,7 @@
 #content{
     background-color: var(--color1);
     border-radius: 5vw;
+    //height: 90vh;
 }
 
 #nav-bar{
@@ -75,6 +76,7 @@
 .page{
     //border:solid red 2px;
     display:grid;
+    //height: 90vh;
     background-color: rgb(255, 219, 153);
     color:rgb(0, 69, 69);
 }
@@ -126,9 +128,10 @@
     display: grid;
     width: 80vw;
     margin: 0 auto;
-    grid-template-rows: 100px;
-    grid-template-columns: 100px;
+    grid-template-rows: auto 1fr 1fr 1em;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
+    //grid-gap: MIN(5vh, 5vw);
 
     #menu-header{
         grid-row-start: 1;
@@ -137,15 +140,22 @@
 
     .menu-section{
         border: 5px solid var(--color2);
-        width: 70vw;
-        //height: 500px;
-        grid-column: 1/3;
+        width: 30vw;
         margin: auto;
         border-radius: 5vw;
-
+        margin: MIN(3vh, 3vw);
         h2{
-            
             text-align: center;
+        }
+
+        .menu-table{
+        border-spacing: 3vw .5vw;
+        margin:auto;
+        table-layout: fixed;
+        width: 100%;
+            td{
+                width: 25%;
+            }
         }
     }
 
@@ -153,8 +163,10 @@
 
     }
 
+
     #breakfast-secion{
         //grid-row-start: 2;
     }
 }
+
 
