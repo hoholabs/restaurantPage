@@ -2,6 +2,7 @@ import './style.css';
 import bannerImage from './header.jpg';
 import loadHome from './home.js'
 import loadMenu from './menu.js'
+import loadContact from './contact.js'
 
 const content = document.getElementById("content");
 //console.log(content);
@@ -34,8 +35,8 @@ navBar.append(banner,homeButton, menuButton, contactButton);
 
 content.append(navBar);
 
-//loadHome();
-loadMenu();
+loadContact();
+
 
 //clear page function
 function clearPage(){
@@ -59,5 +60,5 @@ menuButton.addEventListener("click", () => {
 contactButton.addEventListener("click", () => {
     clearPage();
     content.append(navBar);
-    loadHome();
+    loadContact();
 });

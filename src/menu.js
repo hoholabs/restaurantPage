@@ -36,8 +36,6 @@ function itemsTable (array){
 
     let returnTable = document.createElement("table");
     returnTable.className = "menu-table";
-    //returnTable.style.borderSpacing = "5vw 1vw";
-    //returnTable.style.border = "5px solid red";
 
     array.forEach(element => {
         //create table elements
