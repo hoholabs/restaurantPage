@@ -35,7 +35,7 @@ navBar.append(banner,homeButton, menuButton, contactButton);
 
 content.append(navBar);
 
-loadContact();
+loadHome();
 
 
 //clear page function

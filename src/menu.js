@@ -112,6 +112,9 @@ const drinksArray = [
 makeSection("Drinks",drinksArray);
 
 
+
+
+
 function loadMenu() {
     content.append(menuPage);
 
